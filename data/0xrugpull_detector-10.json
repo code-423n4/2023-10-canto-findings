@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xrugpull_detector",
+  "risk": "2",
+  "title": "LP might not receive eligible reward because of precision loss.",
+  "issueId": 10,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/10"
+}
