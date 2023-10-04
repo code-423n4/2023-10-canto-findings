@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "debo",
+  "risk": "3",
+  "title": "Unchecked array length in the LiquidityMining contract",
+  "issueId": 12,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/12"
+}
