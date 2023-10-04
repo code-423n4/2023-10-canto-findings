@@ -130,3 +130,13 @@ if (rewardsToSend > 0) {
 // 2023-10-canto/blob/main/canto_ambient/contracts/mixins/LiquidityMining.sol#L285-L285
 if (rewardsToSend >= 1) {
 ```
+**Bad**
+```sol
+// 2023-10-canto/blob/main/canto_ambient/contracts/mixins/MarketSequencer.sol#L283-L283
+if (dir.liquidity_ > 0) {
+```
+**Fix**
+```sol
+// 2023-10-canto/blob/main/canto_ambient/contracts/mixins/MarketSequencer.sol#L283-L283
+if (dir.liquidity_ >= 1) {
+```
