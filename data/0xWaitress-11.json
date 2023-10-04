@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xWaitress",
+  "risk": "2",
+  "title": "accrueConcentratedGlobalTimeWeightedLiquidity adn accrueConcentratedPositionTimeWeightedLiquidity has unbounded while loop; potentially out of gas error if not updated for a long time",
+  "issueId": 11,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/11"
+}
