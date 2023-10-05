@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "loop does miss some amount of liquidity time at the tick range edges.",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/60"
+}
