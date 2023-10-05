@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "GKBG",
+  "risk": "2",
+  "title": "Liquidity providers might end up with a `week` of providing `liquidity` for which rewards were not set and no claimable.",
+  "issueId": 90,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/90"
+}
