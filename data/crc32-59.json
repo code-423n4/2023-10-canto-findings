@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "crc32",
+  "risk": "3",
+  "title": "Lack of access modifier for `setAmbRewards` and `setConcRewards`",
+  "issueId": 59,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/59"
+}
