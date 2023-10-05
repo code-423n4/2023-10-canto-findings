@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xHelium",
+  "risk": "3",
+  "title": "Loss of precision when calculating current and nextWeek",
+  "issueId": 80,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/80"
+}
