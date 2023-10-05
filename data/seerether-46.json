@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "When marking a position \"atomic\" during off-grid minting, an error in lockHolder_ or the pool hash could cause the wrong position to be marked",
+  "issueId": 46,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/46"
+}
