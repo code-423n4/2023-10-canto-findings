@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xTheC0der",
+  "risk": "2",
+  "title": "Users miss out on rewards in case `conc/ambRewardPerWeek_` was not set in time",
+  "issueId": 91,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/91"
+}
