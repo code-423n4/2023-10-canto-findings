@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "The state changes are not reverted if the ETH send fails in the claimConcentratedRewards.",
+  "issueId": 63,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/63"
+}
