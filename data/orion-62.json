@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "orion",
+  "risk": "2",
+  "title": "Attacker can hijack profits by front running claimConcentratedRewards and claimAmbientRewards",
+  "issueId": 62,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/62"
+}
