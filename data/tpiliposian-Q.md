@@ -1,4 +1,4 @@
-# Code Optimization Suggestion
+# 1. Code Optimization Suggestion
 
 ## Description
 
@@ -33,3 +33,34 @@ https://github.com/code-423n4/2023-10-canto/blob/29c92a926453a49c8935025a4d3de44
 ## Remediation 
 
 To optimize the code and improve readability, consider creating a custom modifier, to centralize the governance and `weekFrom % WEEK == 0 && weekTo % WEEK == 0` checks. Then, apply this modifier to both functions. This change will reduce code duplication and make it easier to manage access control requirements in the future.
+
+
+# 2. Consolidation of Time-Weighted Liquidity Calculation
+
+## Description
+
+The `LiquidityMining.sol` contract contains repeated code for calculating time-weighted liquidity in multiple functions. Specifically, the code responsible for tracking time-weighted liquidity over weeks is present in three separate functions with minor parameter variations. This redundancy can lead to maintenance challenges, increased risk of inconsistencies, and decreased code readability.
+
+Specifically, the code responsible for tracking time-weighted liquidity over weeks is present in three separate functions:
+`accrueConcentratedGlobalTimeWeightedLiquidity()`,
+`accrueConcentratedPositionTimeWeightedLiquidity()`,
+`accrueAmbientGlobalTimeWeightedLiquidity()`.
+
+```solidity
+            uint32 time = lastAccrued;
+            while (time < block.timestamp) {
+                uint32 currWeek = uint32((time / WEEK) * WEEK);
+                uint32 nextWeek = uint32(((time + WEEK) / WEEK) * WEEK);
+                uint32 dt = uint32(
+                    nextWeek < block.timestamp
+                        ? nextWeek - time
+                        : block.timestamp - time
+                );
+                timeWeightedWeeklyGlobalAmbLiquidity_[poolIdx][currWeek] += dt * liquidity;
+                time += dt;
+            }
+```
+
+## Remediation
+
+To optimize the contract, we recommend consolidating the time-weighted liquidity calculation code into a single internal function. This function can be used internally by the existing functions that require this logic, reducing code duplication and improving maintainability.
