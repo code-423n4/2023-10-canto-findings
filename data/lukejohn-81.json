@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "lukejohn",
+  "risk": "2",
+  "title": "LiquidityMiningPath.setConcRewards() fails to check to ensure that weekFrom > timeWeightedWeeklyGlobalConcLiquidityLastSet_[poolIdx].",
+  "issueId": 81,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/81"
+}
