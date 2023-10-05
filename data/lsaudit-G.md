@@ -29,8 +29,6 @@ To demonstrate how gas ineffective this is, I've performed a simple test in the 
 
     function BBB(int24 lowerTick, int24 upperTick) public {
         uint x;
-        int24 lowerTick = 0;
-        int24 upperTick = 100;
         uint a = gasleft();
         int24 i = lowerTick + 10;
         int24 end_i = upperTick - 10;
