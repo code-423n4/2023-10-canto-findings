@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xbrett8571",
+  "risk": "3",
+  "title": "Reentrancy is possible in `claim` functions, which call out via `.call()`.",
+  "issueId": 254,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/254"
+}
