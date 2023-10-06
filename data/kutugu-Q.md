@@ -2,13 +2,14 @@
 
 | ID     | Title                                                             | Severity     |
 | ------ | ----------------------------------------------------------------- | ------------ |
-| [L-01] | accrueTimeWeightedLiquidity may fail due to running out of gas    | Low          |
+| [L-01] | The accrueTimeWeightedLiquidity may fail due to run out of gas    | Low          |
+| [L-02] | Unclaimed reward will be locked forever in contract               | Low          |
 | [N-01] | Better to make sure crossTicks don't revert                       | Non-Critical |
 | [N-02] | The user can't accrue rewards when week + WEEK == block.timestamp | Non-Critical |
 
 # Detailed Findings
 
-# [L-01] accrueTimeWeightedLiquidity may fail due to running out of gas
+# [L-01] The accrueTimeWeightedLiquidity may fail due to run out of gas
 
 ## Description
 
@@ -19,6 +20,17 @@ For a large tick range position that has not been updated for a long time, claim
 ## Recommendations
 
 `accumulateConcentratedPositionTimeWeightedLiquidity` should only update the state for the specified time range
+
+# [L-02] Unclaimed reward will be locked forever in contract
+
+## Description
+
+`LiquidityMiningPath` allows the owner to transfer in ETH and set rewards, but it does not provide any method to withdraw unclaimed rewards in the contract, and the upper `CrocSwapDex` proxy contract does not have any support.
+Since the rewards are distributed according to the liquidity ratio, if some users never claim the rewards, the remaining rewards will be locked in the contract permanently, causing a loss of funds.
+
+## Recommendations
+
+Add a new method to withdraw funds
 
 # [N-01] Better to make sure crossTicks don't revert
 
