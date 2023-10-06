@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "marqymarq10",
+  "risk": "2",
+  "title": "LiquidityMining.initTickTracking() called by MarketSequencer.initCurve() Check if the liquidity curve for the pool is already initialized.",
+  "issueId": 214,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/214"
+}
