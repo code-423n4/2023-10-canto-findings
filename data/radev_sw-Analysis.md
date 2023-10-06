@@ -1,4 +1,4 @@
-# Canto Analysis Report by Radoslav Radev
+# Canto Analysis Report 
 
 ---
 
@@ -145,6 +145,8 @@ The owner would receive `9` as rewards for the weeks `[100, 101]` in our hypothe
 ### **Potential Attack Vectors**:
 1. Possibility of liquidity providers withdrawing more rewards than they have accumulated.
 2. Scenario where liquidity providers might receive lesser rewards than they are entitled to.
+
+
 
 ### Time spent:
 20 hours
