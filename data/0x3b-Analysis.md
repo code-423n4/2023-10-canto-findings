@@ -1,9 +1,40 @@
 Basic analysis
-In my attempt to understand the protocol, I found myself facing a time constraint that prevented me from delving as deeply as I would have liked. Instead, I resorted to a cursory examination of the protocol, looking at it from a high-level perspective. Regrettably, I could only allocate around an hour and a half to this review, which significantly limited the depth of my analysis.
 
-Despite these time constraints, I diligently reviewed the protocol, aiming to extract as much valuable information as I could within the given timeframe. Unfortunately, due to the limited scope of my examination, I was able to identify only one **HIGH**.
+| Severity | Occurrences |
+|----------|-------------|
+| High     | 1           |
+| Medium   | 1           |
+| Low      | 0           |
+| Gas      | 0           |
+| Analysis | 20 min.     |
+
+
+# Time allocations
+
+|            |            |
+|------------|------------|
+| Start date | 06.10.2023 |
+| End date   | 06.10.2023 |
+| **Total**  | **1 day**  |
+
+| Members       | Positions            | Time spent |
+|---------------|----------------------|------------|
+| **0x3b**      | full time researcher | ~3H        |
+
+
+# Short description
+In **LiquidityMining**, there exist two distinct accrual functions:
+
+1. `accrueConcentratedPositionTimeWeightedLiquidity`: This function is designed to accrue rewards for the Concentrated Automated Market Maker (CAMM), which leverages the UNI v3 mechanism for concentrated liquidity provision.
+
+2. `accrueAmbientPositionTimeWeightedLiquidity`: On the other hand, this function is responsible for accruing rewards for the Ambient Automated Market Maker (AMM), which closely resembles the UNI v2-style market maker.
+
+Both of these accrual mechanisms operate on a weekly basis. Every week, users' rewards are determined based on their staked positions and whether those positions were within a favorable tick range. At the end of each week, users have the opportunity to claim the rewards associated with their positions.
+
+
+
 
 
 
 ### Time spent:
-1 hours
+3 hours
