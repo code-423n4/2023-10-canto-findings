@@ -1,0 +1,20 @@
+## Low 1: Governance can set/change rewards of past weeks
+The governance can arbitraritly set/change concentrated/ambient rewards for each week in the future and **past**, see [setConcRewards(...)](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L65-L72) and [setAmbRewards(...)](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L74-L81).  
+As a result, rewards of past weeks can be changed which leads to an **unfair distribution of rewards** among the users (liquidity providers) depending on whether they claimed their rewards **before or after** the change.  
+In order to enforce consistency, I suggest to only allow previously uninitialized rewards (value 0) to be set.
+
+## Low 2: Reward week is marked as claimed even though no rewards were claimed
+If the overall liquidity is currently 0, see [L181-L182](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/mixins/LiquidityMining.sol#L181-L182) in `claimConcentratedRewards(...)` and [L273-L276](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/mixins/LiquidityMining.sol#L273-L276) in `claimAmbientRewards(...)`, no rewards are sent for the given week while it's still accounted as claimed, see [L190](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/mixins/LiquidityMining.sol#L190) and [L283](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/mixins/LiquidityMining.sol#L283).  
+I suggest to move [L190](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/mixins/LiquidityMining.sol#L190) and [L283](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/mixins/LiquidityMining.sol#L283) into the *if-block* before in order to allow users to retry claiming their rewards once overall liquidity is > 0 again.
+
+## Non-critical 1: Limited protocol lifetime due to usage of `uint32` for Unix timestamps
+The Unix timestamps in seconds, e.g. the [week timestamp](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L65), are given as `uint32`. This limits the protocol lifetime to year 2106 which is within a human lifetime from now, see [Time formatting and storage bugs](https://en.wikipedia.org/wiki/Time_formatting_and_storage_bugs#Year_2106).
+
+## Non-critical 2: Begin of new reward week is a Thursday
+Since week timestamps must be whole multiples of the seconds in a week, see [L67](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L67) & [L76](https://github.com/code-423n4/2023-10-canto/blob/37a1d64cf3a10bf37cbc287a22e8991f04298fa0/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L76), and Unix timestamp 0 (`block.timestamp`) is a Thursday, every new reward week will begin on a Thursday (neglecting leap seconds).  
+I suggest adding an offset such that new reward weeks begin on Mondays and therefore align with the calendar.
+
+
+## Side note for the sponsor about storage layout (not in scope)
+The storage layout contract in the [CrocSwap repo](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/contracts/mixins/StorageLayout.sol) doesn't reflect the storage additions of the [Canto sidecar storage](https://github.com/code-423n4/2023-10-canto/blob/main/canto_ambient/contracts/mixins/StorageLayout.sol) yet.  
+Currently there are **no** conflicts, but please make sure to merge your storage additions into the CrocSwap repo before other sidecars with new storage variables are added to the layout.
