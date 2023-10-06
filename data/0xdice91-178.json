@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xdice91",
+  "risk": "2",
+  "title": "Anyone can set the `weeklyReward`s via `LiquidityMiningPath.sol` as `setConcRewards()/setAmbRewards()` functions have their access control checks commented out.",
+  "issueId": 178,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/178"
+}
