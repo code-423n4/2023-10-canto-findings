@@ -12,7 +12,9 @@ Centralization risks at this time cannot be fully ascertained. Governance exists
 While not directly forked, the contracts were developed as a sidecar contract that plugs into the Ambient.finance DEX using their proxy contract patterns. They serve as the interface for the CrocSwapDex contracts and are used to initialize tick tracking and also to create and remove liquidity.  The protocol utilizes a CLMM (Concentrated Liquid Market Maker) similar to Uniswap v3 and a constant product AMM similar to Uniswap v2.  The system should analyze the potential risks and vulnerabilities associated with these AMMs, such as impermanent loss, price manipulations, sybil attacks and so on.
 ## **Conclusion**
 
-The Canto Liquidity Mining Protocol offers a platform for liquidity mining and incentivizing liquidity in Ambient pools deployed on Canto. The team has done an excellent job as we did not find any significant issues during the audit of the codebase, which is commendable. It is recommended to follow the provided recommendations and take into account any identified issues raised by other auditors.
+The Canto Liquidity Mining Protocol offers a platform for liquidity mining and incentivizing liquidity in Ambient pools deployed on Canto. The team has done an excellent job as we did not find any significant issues during the audit of the codebase, which is commendable. It advise following the provided recommendations and also taking into account any identified issues raised by other auditors.
+
+
 
 ### Time spent:
 36 hours
