@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "HChang26",
+  "risk": "2",
+  "title": "Proxy Contract Entry Points Should Be Marked as Payable",
+  "issueId": 116,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/116"
+}
