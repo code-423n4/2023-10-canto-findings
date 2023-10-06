@@ -27,6 +27,8 @@ For a large tick range position that has not been updated for a long time, claim
 
 `LiquidityMiningPath` allows the owner to transfer in ETH and set rewards, but it does not provide any method to withdraw unclaimed rewards in the contract, and the upper `CrocSwapDex` proxy contract does not have any support.
 Since the rewards are distributed according to the liquidity ratio, if some users never claim the rewards, the remaining rewards will be locked in the contract permanently, causing a loss of funds.
+Of course, rewards can continue to be distributed in the next cycle, but some of the rewards will always remain in the contract until the value is reduced to almost 0.
+If the owner does not want to distribute rewards any more, the remaining funds cannot be withdrawn.
 
 ## Recommendations
 
