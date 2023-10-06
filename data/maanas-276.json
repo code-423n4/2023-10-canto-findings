@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "maanas",
+  "risk": "2",
+  "title": "Users may be unable to claim their rewards and add/remove liquidity due exceeding gas limit ",
+  "issueId": 276,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/276"
+}
