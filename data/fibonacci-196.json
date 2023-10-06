@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "fibonacci",
+  "risk": "3",
+  "title": "Protocol control related commands have no access control check",
+  "issueId": 196,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/196"
+}
