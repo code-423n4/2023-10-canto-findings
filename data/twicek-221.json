@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "twicek",
+  "risk": "2",
+  "title": "The while loop used in all the `accrueXXXPositionTimeWeightedLiquidity` function could make a call reach the block gas limit",
+  "issueId": 221,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/221"
+}
