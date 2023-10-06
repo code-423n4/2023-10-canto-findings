@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xbrett8571",
+  "risk": "3",
+  "title": "Lack of validation allows invalid ticks, impacting data integrity.",
+  "issueId": 257,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/257"
+}
