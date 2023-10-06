@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "gzeon",
+  "risk": "2",
+  "title": "Reward setting can be overwritten to cause inconsistency",
+  "issueId": 164,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/164"
+}
