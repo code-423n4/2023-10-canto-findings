@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xDING99YA",
+  "risk": "3",
+  "title": "accrueConcentratedPositionTimeWeightedLiquidity() can easily DOS due to the for loop in it",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/215"
+}
