@@ -83,3 +83,9 @@ https://github.com/code-423n4/2023-10-canto/blob/e9183df85f40a3f588f369c8f3a8fdd
 https://github.com/code-423n4/2023-10-canto/blob/e9183df85f40a3f588f369c8f3a8fdd8f7503f38/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L26
 https://github.com/code-423n4/2023-10-canto/blob/e9183df85f40a3f588f369c8f3a8fdd8f7503f38/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L41
 
+6. QA: these functions are not called externally at all, only internally, therefore should change from `public` to `internal` visibility modifier.
+
+https://github.com/code-423n4/2023-10-canto/blob/e9183df85f40a3f588f369c8f3a8fdd8f7503f38/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L55
+
+https://github.com/code-423n4/2023-10-canto/blob/e9183df85f40a3f588f369c8f3a8fdd8f7503f38/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L61
+
