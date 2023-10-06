@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "Hama",
+  "risk": "3",
+  "title": "Calculation Issue in claimConcentratedRewards Function Can Prevent Reward Distribution for Narrow Tick Ranges",
+  "issueId": 187,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/187"
+}
