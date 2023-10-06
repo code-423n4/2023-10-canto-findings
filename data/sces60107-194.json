@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "sces60107",
+  "risk": "2",
+  "title": "If rewards are not set. `ambLiquidityRewardsClaimed_` and `concLiquidityRewardsClaimed_` shouldn't be set to true.",
+  "issueId": 194,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/194"
+}
