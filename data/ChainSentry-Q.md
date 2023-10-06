@@ -1,5 +1,5 @@
 
-##LOW RISK 1
+## LOW RISK 1
 
 Zero Reward Check Missing
 
@@ -36,7 +36,7 @@ Implement a check to exit the function if rewards are zero, thereby saving gas c
 
 
 
-##LOW RISK 2
+## LOW RISK 2
 
 Tick Crossing Validation Missing
 
@@ -71,7 +71,7 @@ Add validation to ensure exitTick and entryTick are valid sequential ticks.
 
 
 
-##LOW RISK 3
+## LOW RISK 3
 
 Unchecked Tick Initialization
 
