@@ -1,3 +1,3 @@
-1. Instead of using abi.decode, assembly can be used to efficiently extract calldata values. That way call data values that will not be used will be ignored.
+1. Instead of using abi.decode, assembly can be used to efficiently extract calldata values. The abi.decode() function checks the type of the encoded data and then decodes the data according its type. This checking and decoding process adds some overhead to the abi.decode() function. This adds to the overall gas cost of the function. 
 https://github.com/code-423n4/2023-10-canto/blob/29c92a926453a49c8935025a4d3de449150fc2ff/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L28
 https://github.com/code-423n4/2023-10-canto/blob/29c92a926453a49c8935025a4d3de449150fc2ff/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L43
