@@ -52,10 +52,12 @@ Canto introduce a new liquidity mining feature tailored specifically for Ambient
 
 
 1 **LiquidityMining.sol**
-
+![LiquidityMining.sol](https://github.com/kaveyjoe/Work/blob/main/Function%20Graph%20-%20LiquidityMining.sol.png)
 
 
 2 **LiquidityMiningPath.sol**
+
+![LiquidityMiningpath.sol](https://github.com/kaveyjoe/Work/blob/main/Function%20Graph%20-%20MarketSequencer.sol.png)
 
 ## Key Components and Mechanisms
 **1. Liquidity Incentive Mechanism**
@@ -139,6 +141,8 @@ The system tracks time-weighted liquidity for both ambient and concentrated posi
 - **Gas Usage Optimization Awareness:** The recognition of potentially unpredictable gas costs for complex operations highlights a consideration for user experience and economic feasibility.
 
 - **Dependency Monitoring:** The acknowledgement of importing libraries and mixins from external sources underlines a prudent approach to external dependencies. Vigilance regarding potential changes or compromises in these dependencies is key.
+
+
 
 
 ### Time spent:
