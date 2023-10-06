@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xdice91",
+  "risk": "2",
+  "title": "Liquidity providers may recieve wrong rewards due to loss of precision in the calculation of `currWeek` and `nextWeek`.",
+  "issueId": 268,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/268"
+}
