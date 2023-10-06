@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "Rewards cannot be transferred when calling protocol command",
+  "issueId": 239,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/239"
+}
