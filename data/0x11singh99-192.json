@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0x11singh99",
+  "risk": "2",
+  "title": "Missing access control in `setAmbRewards` and `setConcRewards` functions of `LiquidityMiningPath.sol`. Malicious user can call them and increase the reward by passing `poolIdx` for his pool.",
+  "issueId": 192,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/192"
+}
