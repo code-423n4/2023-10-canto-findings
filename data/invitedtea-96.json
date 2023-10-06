@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "invitedtea",
+  "risk": "3",
+  "title": "For the claimConcentratedRewards function passing the recipient address as a parameter to avoid impersonation risks.",
+  "issueId": 96,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/96"
+}
