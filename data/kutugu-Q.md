@@ -3,7 +3,7 @@
 | ID     | Title                                                             | Severity     |
 | ------ | ----------------------------------------------------------------- | ------------ |
 | [L-01] | The accrueTimeWeightedLiquidity may fail due to run out of gas    | Low          |
-| [L-02] | Unclaimed reward will be locked forever in contract               | Low          |
+| [L-02] | A small amount unclaimed reward may be locked forever in contract | Low          |
 | [N-01] | Better to make sure crossTicks don't revert                       | Non-Critical |
 | [N-02] | The user can't accrue rewards when week + WEEK == block.timestamp | Non-Critical |
 
@@ -21,7 +21,7 @@ For a large tick range position that has not been updated for a long time, claim
 
 `accumulateConcentratedPositionTimeWeightedLiquidity` should only update the state for the specified time range
 
-# [L-02] Unclaimed reward will be locked forever in contract
+# [L-02] A small amount unclaimed reward may be locked forever in contract
 
 ## Description
 
