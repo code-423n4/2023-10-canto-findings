@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "emerald7017",
+  "risk": "3",
+  "title": "No access control on `protocolCmd` and `userCmd`; potential for abuse.",
+  "issueId": 251,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/251"
+}
