@@ -4,7 +4,7 @@ The `uint32[] memory weeksToClaim` input variable in both the `claimConcentrated
 
 Github [link](https://github.com/code-423n4/2023-10-canto/blob/40edbe0c9558b478c84336aaad9b9626e5d99f34/canto_ambient/contracts/mixins/LiquidityMining.sol#L175)
 
-## Recommended Mitigation
+### Recommended Mitigation
 
 Consider requiring that every element in `uint32[] memory weeksToClaim` satisfies an additional require check in the respective for-loops as follows.
 
@@ -66,7 +66,7 @@ index bd21a32..9656cfa 100644
  });
 ```
 
-## Recommended Mitigation
+### Recommended Mitigation
 
 Consider dis-allowing the rewards for a pool/week combination to be changed after they have been set once.
 
@@ -76,7 +76,7 @@ The `tickTrackingIndexAccruedUpTo_` storage variable lacks a clarifying comment,
 
 Github [link](https://github.com/code-423n4/2023-10-canto/blob/40edbe0c9558b478c84336aaad9b9626e5d99f34/canto_ambient/contracts/mixins/StorageLayout.sol#L192)
 
-## Recommended Mitigation
+### Recommended Mitigation
 
 Consider adding a clarifying comment to the `tickTrackingIndexAccruedUpTo_` storage variable.
 
@@ -99,6 +99,6 @@ File: contracts/callpaths/LiquidityMiningPath.sol
 
 Github [link](https://github.com/code-423n4/2023-10-canto/blob/40edbe0c9558b478c84336aaad9b9626e5d99f34/canto_ambient/contracts/callpaths/LiquidityMiningPath.sol#L66)
 
-## Recommended Mitigation
+### Recommended Mitigation
 
 Remove lines 66 and 75 from `LiquidityMiningPath.sol`.
