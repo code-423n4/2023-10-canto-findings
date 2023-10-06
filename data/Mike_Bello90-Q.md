@@ -3,7 +3,7 @@
 | ID  |   Title                                                     | Occurrences |
 |:---:|:---                                                         | :---:       |
 | 1.  | Avoid Casting 2 times the same data.                        | 2           |
-| 2   | Use calldata instead of memory in function parameters.      | 6           |
+| 2   | Use calldata instead of memory in immutable function parameters.      | 6           |
 | 3.  | Use unchecked{++I;} in foor loops.                          | 5           |
 | 4.  | Cache the length of the array before reading in a for cycle.| 2           |
 | 5.  | Use ExcessivelySafeCall for call to untrusted address.      | 2           |
@@ -23,8 +23,8 @@ https://github.com/code-423n4/2023-10-canto/blob/40edbe0c9558b478c84336aaad9b962
         tickTracking_[poolIdx][entryTick].push(tickTrackingData);
     }
 ```
-**2.- Use calldata instead of memory in function parameters.**
-in functions parameters that don't mute use calldata instead of memory to reduce gas costs, you can change "memory" keyword for "calldata" in the following functions.
+**2.- Use calldata instead of memory in immutable function parameters.**
+in immutable functions parameters you can use calldata instead of memory to reduce gas costs, you can change "memory" keyword for "calldata" in the following functions.
 
 https://github.com/code-423n4/2023-10-canto/blob/40edbe0c9558b478c84336aaad9b9626e5d99f34/canto_ambient/contracts/mixins/LiquidityMining.sol#L39-L65
 ```solidity
