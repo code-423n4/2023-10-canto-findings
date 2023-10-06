@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "te_aut",
+  "risk": "3",
+  "title": "require statement commented posses  attack by malicious contract",
+  "issueId": 271,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/271"
+}
