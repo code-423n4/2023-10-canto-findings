@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "gzeon",
+  "risk": "3",
+  "title": "Liquidity is double counted for each tick above 21 ticks",
+  "issueId": 173,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/173"
+}
