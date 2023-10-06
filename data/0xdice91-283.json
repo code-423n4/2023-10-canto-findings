@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "0xdice91",
+  "risk": "2",
+  "title": "`LiquidityMining.sol` cannot be `funded` for rewards distribution.",
+  "issueId": 283,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/283"
+}
