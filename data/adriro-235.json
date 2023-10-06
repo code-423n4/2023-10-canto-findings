@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "adriro",
+  "risk": "3",
+  "title": "Potential denial of service due to out of bound gas usage",
+  "issueId": 235,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/235"
+}
