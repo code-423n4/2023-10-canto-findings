@@ -1,0 +1,8 @@
+{
+  "contest": 288,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "Incorrect conclusion that global liquidity is non-zero. Should validate before dividing rewards by global liquidity",
+  "issueId": 112,
+  "issueUrl": "https://github.com/code-423n4/2023-10-canto-findings/issues/112"
+}
